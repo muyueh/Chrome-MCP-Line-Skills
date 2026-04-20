@@ -8,6 +8,15 @@
 
 If `chrome-devtools` is missing, stop and fix the Codex environment first. That setup is outside this skill.
 
+## Direct Links
+
+- Official LINE Chrome extension:
+  [Chrome Web Store](https://chromewebstore.google.com/detail/line/ophjlpahpchlmihnnnihgmmeilfjmjjc)
+- Codex CLI setup:
+  [OpenAI Codex CLI docs](https://developers.openai.com/codex/cli)
+- Codex MCP setup reference:
+  [OpenAI Docs MCP docs](https://developers.openai.com/learn/docs-mcp)
+
 ## Codex-First Gate
 
 Treat this as the first check after download:
@@ -19,6 +28,9 @@ Treat this as the first check after download:
 5. run the shared helper and `session_status`
 
 If any step fails, stop there. Do not continue into chat resolution or sending.
+
+If step 1 fails, use the official Codex links above to fix the Codex environment first.
+If step 2 fails, use the official LINE Chrome Web Store link above.
 
 ## Minimum Setup For A New User
 
