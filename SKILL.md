@@ -9,6 +9,18 @@ Use `chrome-devtools` as the primary tool. Treat the official LINE extension app
 
 This shared skill does not install the LINE extension, install `chrome-devtools`, or perform LINE login on the user's behalf. It assumes a Codex environment where `chrome-devtools` is already available and a browser/profile where the official LINE extension can be opened at the explicit extension URL.
 
+## Codex Download Gate
+
+When Codex first downloads this repo, the first job is not chat navigation or send logic. The first job is to verify the install boundary:
+
+1. confirm `chrome-devtools` is available in the current Codex environment
+2. confirm the official LINE Chrome extension is installed in the same browser/profile that `chrome-devtools` will attach to
+3. open the explicit extension URL
+4. run the shared helper and `session_status`
+5. stop immediately if any of those checks fail
+
+Do not continue to target resolution, request inspection, or send helpers until that gate is green.
+
 ## Prerequisites
 
 - A Codex environment where `chrome-devtools` is available.
