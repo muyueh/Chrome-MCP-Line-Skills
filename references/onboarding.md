@@ -8,6 +8,18 @@
 
 If `chrome-devtools` is missing, stop and fix the Codex environment first. That setup is outside this skill.
 
+## Codex-First Gate
+
+Treat this as the first check after download:
+
+1. verify `chrome-devtools` exists
+2. verify the official LINE Chrome extension is installed
+3. verify the extension is installed in the exact browser/profile `chrome-devtools` will attach to
+4. open `chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html#/chats`
+5. run the shared helper and `session_status`
+
+If any step fails, stop there. Do not continue into chat resolution or sending.
+
 ## Minimum Setup For A New User
 
 1. Confirm the Codex environment exposes `chrome-devtools`.
