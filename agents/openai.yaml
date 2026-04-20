@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chrome LINE Extension Automation"
+  short_description: "Operate the official LINE extension app via Chrome MCP"
+  default_prompt: "Attach to the official LINE extension app at the explicit extension URL. Before any read or send, confirm the prerequisites from references/onboarding.md: the official LINE Chrome extension must exist in the attached browser/profile and the LINE session must already be logged in. If attach or session health fails, stop and report the missing prerequisite instead of improvising. Resolve only an exact caller-provided chat id or exact chat name, install the runtime helpers, prefer page-context internal API invocation for read and send, use the DOM composer only as a pre-send fallback if the internal handle is unavailable, and verify final success with a server-backed reread after reload."
